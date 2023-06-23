@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+// Funcion para contar los divisores de un numero que son divisibles por dos
+int contarDivisoresDivisiblesPorDos(int numero) {
+    int contador = 0;
+    for (int i = 1; i * i <= numero; i++) {
+        if (numero % i == 0) {
+            // Si el divisor actual es par, se incrementa el contador
+            if (i % 2 == 0)
+                contador++;
+
+            // Si el cociente no es igual al divisor y es par, se incrementa el contador
+            if (numero / i != i && (numero / i) % 2 == 0)
+                contador++;
+        }
+    }
+    return contador;
+}
+
+int main() {
+    int casosPrueba;
+    scanf("%d", &casosPrueba);
+
+    // Iterar sobre cada caso de prueba
+    for (int i = 0; i < casosPrueba; i++) {
+        int numero;
+        scanf("%d", &numero);
+
+        // Obtener el resultado de contar los divisores divisibles por dos del numero dado
+        int resultado = contarDivisoresDivisiblesPorDos(numero);
+
+        // Imprimir el resultado
+        printf("%d\n", resultado);
+    }
+
+    return 0;
+}
+
