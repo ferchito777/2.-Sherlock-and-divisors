@@ -20,6 +20,8 @@ Entrada de muestra:
 Salida de muestra:
 0
 3
+
+
 Explicación
 9 tiene tres divisores 1, 3 y 9 ninguno de los cuales es divisible por 2.
 8 tiene cuatro divisores 1,2,4 y 8, de los cuales tres son divisibles por 2.
