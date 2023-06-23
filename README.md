@@ -12,13 +12,12 @@ Restricciones
 1≤T≤1000
 1≤N≤10^9
 
-Entrada de muestra
-
+Entrada de muestra: 
 2
 9
 8
-Salida de muestra
 
+Salida de muestra:
 0
 3
 Explicación
